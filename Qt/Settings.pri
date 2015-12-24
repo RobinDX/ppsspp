@@ -64,7 +64,7 @@ win32-msvc* {
 	else: QMAKE_CXXFLAGS += -std=c++11
 	QMAKE_CFLAGS_RELEASE ~= s/-O.*/
 	QMAKE_CXXFLAGS_RELEASE ~= s/-O.*/
-	QMAKE_ALLFLAGS_RELEASE += -O3 -ffast-math
+	QMAKE_ALLFLAGS_RELEASE += -O2 -ffast-math
 }
 
 contains(QT_CONFIG, opengles.) {
